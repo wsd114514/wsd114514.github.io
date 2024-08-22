@@ -4,18 +4,21 @@
 <meta charset="UTF-8">
 <title>WSD官方网站</title>
 <script language="JavaScript">
-<!--
+<!-- 隐藏JavaScript代码 -->
+// FP_swapImg函数用于交换图片
 function FP_swapImg() {//v1.0
  var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
  n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
  elm.$src=elm.src; elm.src=args[n+1]; } }
 }
 
+// FP_preloadImgs函数用于预加载图片
 function FP_preloadImgs() {//v1.0
  var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
  for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
 }
 
+// FP_getObjectByID函数用于通过ID获取对象
 function FP_getObjectByID(id,o) {//v1.0
  var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
  else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
@@ -30,7 +33,6 @@ function FP_getObjectByID(id,o) {//v1.0
 </head>
 
 <body onload="FP_preloadImgs(/*url*/'buttonF.jpg', /*url*/'buttonE.jpg')">
-
 
 <table border="0" cellpadding="0" cellspacing="0" width="1695">
 	<!-- MSTableType="layout" -->
@@ -51,10 +53,10 @@ function FP_getObjectByID(id,o) {//v1.0
 		<font color="#000000">新主页（测试版）</font></a></font></td>
 		<td valign="top"  width="1346">
 		<!-- MSCellType="ContentBody" -->
-		�&#65533;<p>�&#65533;</p>
-		<p>�&#65533;</p>
-		<p>�&#65533;</p>
-		<p>�&#65533;</td>
+		�&#65533;<p>�&#65533;</p>
+		<p>�&#65533;</p>
+		<p>�&#65533;</p>
+		<p>�&#65533;</td>
 	</tr>
 
 
