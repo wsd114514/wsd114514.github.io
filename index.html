@@ -33,6 +33,12 @@
         .logo {
             font-size: 24px;
             font-weight: bold;
+            text-decoration: none;
+            color: black;
+        }
+        .logo a {
+            text-decoration: none;
+            color: black;
         }
 
         .nav {
@@ -66,7 +72,7 @@
         function changeBackground() {
             const mainElement = document.querySelector('.main');
             const randomImage = getRandomImage();
-            mainElement.style.backgroundImage = `url('images/BackGround/${randomImage}')`;
+            mainElement.style.backgroundImage = `url('./images/BackGround/${randomImage}')`;
         }
 
         document.addEventListener('DOMContentLoaded', (event) => {
@@ -79,9 +85,9 @@
 <body>
 
     <div class="header">
-        <div class="logo">WSD</div>
+        <div class="logo"><a href=".\index.html">WSD</a></div>
         <div class="nav">
-            <a href="videolink.html">视频链接</a>
+            <a href="./videolink.html">视频链接</a>
             <a href="#">导航</a>
             <a href="#">关于</a>
         </div>

@@ -1,35 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh">
+
 <head>
-<meta charset="UTF-8">
-<title>WSD官方网站 | 视频链接</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WSD官网</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: rgba(255, 255, 255, 0.353);
+            /* 调整透明度 */
+            backdrop-filter: blur(20px);
+            /* 增加模糊程度 */
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            box-sizing: border-box;
+            z-index: 1000;
+        }
+
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
+        }
+        .logo a {
+            text-decoration: none;
+            color: black;
+        }
+
+
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .main {
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            /* 新增，用于水平居中文本内容 */
+        }
+
+        .content {
+            background-color: rgba(0, 0, 0, 0.14);
+            /* 调整透明度 */
+            backdrop-filter: blur(80px);
+            /* 增加模糊程度 */
+            height: auto;
+            width: 50%;
+            box-sizing: border-box;
+            z-index: 1000;
+            border-radius: 10px; /* 添加圆角 */
+        }
+    </style>
+    <script>
+        function getRandomImage() {
+            // 假设这是一个返回随机图片路径的函数
+            const images = ['1.png', '2.png', '3.png', '4.png', '5.png'];
+            const randomIndex = Math.floor(Math.random() * images.length);
+            return images[randomIndex];
+        }
+
+        function changeBackground() {
+            const mainElement = document.querySelector('.main');
+            const randomImage = getRandomImage();
+            mainElement.style.backgroundImage = `url('./images/BackGround/${randomImage}')`;
+        }
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+            // 初始设置背景图片
+            changeBackground();
+        });
+    </script>
 </head>
 
 <body>
 
+    <div class="header">
+        <div class="logo"><a href=".\index.html">WSD | 视频链接</a></div>
+        <div class="nav">
+            <a href="/videolink.html" style="background-color: black; color: white;">视频链接</a>
+            <a href="#">导航</a>
+            <a href="#">关于</a>
+        </div>
+    </div>
 
-<table border="0" cellpadding="0" cellspacing="0" width="1695" height="392">
-	<!-- MSTableType="layout" -->
-	<tr>
-		<td valign="top" bgcolor="#000000">
-		<!-- MSCellType="DecArea" -->
-		<font size="7" face="HarmonyOS Sans SC" color="#FFFFFF">
-		<a href="index.html"><font color="#FFFFFF">WSD官方网站</font></a></font></td>
-		<td valign="top" height="64" bgcolor="#000000">
-		<!-- MSCellType="ContentHead" -->
-	<font color="#FFFFFF" size="7" face="HarmonyOS Sans SC">视频链接</font></tr>
-	<tr>
-		<td valign="top" width="349">
-		<!-- MSCellType="NavBody" -->
-		　</td>
-		<td valign="top" height="328" width="1346">
-		<!-- MSCellType="ContentBody" -->
-		　<ol>
-			<li><font face="黑体"><a href="videolink/1.WSD_KW_JC_01.html">WSD_KW_JC_01</a></font></li>
-			</ol>
-		</td>
-	</tr>
-
+    <div class="main">
+        <div class="content">
+            　<ol>
+                <li><font face="黑体"><a href="videolink/1.WSD_KW_JC_01.html">WSD_KW_JC_01</a></font></li>
+                </ol>
+        </div>
+        
+    </div>
 
 </body>
 
