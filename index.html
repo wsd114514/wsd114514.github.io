@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WSD官网</title>
+    <link rel="stylesheet" href="./sidebar.css">
+    <link rel="stylesheet" href="./glass.css">
     <style>
         body {
             margin: 0;
@@ -25,7 +27,7 @@
             left: 0;
             width: 100%;
             box-sizing: border-box;
-            z-index: 1000;
+            /* z-index: 1000; */
         }
 
 
@@ -36,6 +38,7 @@
             text-decoration: none;
             color: black;
         }
+
         .logo a {
             text-decoration: none;
             color: black;
@@ -83,19 +86,31 @@
 </head>
 
 <body>
-
+    <script src="./sidebar.js"></script>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="./index.html">主页</a>
+        <a href="./videolink.html">视频链接</a>
+    </div>
     <div class="header">
         <div class="logo"><a href=".\index.html">WSD</a></div>
         <div class="nav">
             <a href="./videolink.html">视频链接</a>
             <a href="http://www.072211.xyz">072211.xyz</a>
             <a href="#">关于</a>
+            <button class="glass-button" onclick="openNav()">&#9776;</button>
         </div>
     </div>
 
     <div class="main">
-        <!-- Main content could go here -->
+
+
     </div>
+    <div id="main">
+
+
+    </div>
+
 
 </body>
 
