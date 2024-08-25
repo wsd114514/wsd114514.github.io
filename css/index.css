@@ -1,0 +1,68 @@
+.header {
+    background-color: rgba(255, 255, 255, 0.353);
+    /* 调整透明度 */
+    backdrop-filter: blur(20px);
+    /* 增加模糊程度 */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.main {
+    background-size: cover;
+    height: 100vh; /* 或者指定一个具体的像素值 */
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow-y: auto; /* 确保垂直方向上超出部分可以滚动 */
+}
+
+
+.container {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(255, 255, 255, 0.353);
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
+}

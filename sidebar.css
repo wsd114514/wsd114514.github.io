@@ -3,7 +3,7 @@
     height: 100%; /* 100% 全高 */
     width: 0; /* 0 宽度 - 使用 JavaScript 更改 */
     position: fixed; /* 原地不动 */
-    z-index: 1; /* 保持在顶部 */
+    z-index: 1001; /* 保持在顶部 */
     top: 0;
     left: 0;
     background-color: #1111112f; /* 黑色*/
